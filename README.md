@@ -1,3 +1,3 @@
 # Global Landing
 
-[Nootris Link](https://kosatos.github.io/lucky-group-test/)
+[Global Link](https://kosatos.github.io/lucky-group-test/)

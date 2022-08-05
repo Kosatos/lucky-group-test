@@ -36,57 +36,102 @@
 				</ul>
 			</nav>
 
-			<button type="button" class="header__signup-btn btn">sign up</button>
+			<div class="header__controllers">
+				<button type="button" class="header__signup-btn btn">sign up</button>
+
+				<div class="header__burger burger-header">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
 		</header>
 
 		<main class="hero">
 
-			<h1 class="hero__call-to-action">
-				now buy your<br> PIN or <b>top up</b><br> with bank transfer
-			</h1>
+			<div class="background-content">
 
-			<p class="hero__description">
-				We Make international calling simple, relible, and cheap basedon your unique calling behavior.
-			</p>
-
-			<button type="button" class="hero__get-started-btn btn">get started</button>
-
-			<form class="hero__form">
-				<input type="text" class="hero__search" placeholder="Where do you want to call?">
-				<button class="hero__search-btn btn" type="submit"></button>
-			</form>
-
-			<div class="hero__users users-hero">
-				<div class="users-hero__pics">
-					<div class="users-hero__pic add-pic"></div>
-					<img src="./img/user3.png" alt="" class="users-hero__pic">
-					<img src="./img/user2.png" alt="" class="users-hero__pic">
-					<img src="./img/user1.png" alt="" class="users-hero__pic">
-
+				<div class="background-content__spinner spinner">
+					<div class="spinner__main-circle">
+						<div class="spinner__item item-1">
+							<img src="./img/flag1.png" alt="">
+						</div>
+						<div class="spinner__item item-2">
+							<img src="./img/flag2.png" alt="">
+						</div>
+						<div class="spinner__item item-3">
+							<img src="./img/flag3.png" alt="">
+						</div>
+						<div class="spinner__item item-4">
+							<img src="./img/flag1.png" alt="">
+						</div>
+						<div class="spinner__item item-5">
+							<img src="./img/flag1.png" alt="">
+						</div>
+					</div>
+					<div class="spinner__middle-circle"></div>
 				</div>
-				<span class="users-hero__quantity">
-					45k+ Regular User. <a href="#">View Price Plan</a>
-				</span>
+
+				<div class="background-content__image">
+					<img src="./img/hero-img.png" alt="Girl" class="background-content__image">
+				</div>
+			</div>
+
+			<div class="hero__content">
+
+				<h1 class="hero__call-to-action">
+					now buy your<br> PIN or <b>top up</b><br> with bank transfer
+				</h1>
+
+				<div class="hero__description">
+					<div class="loader active">
+						<svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+							enable-background="new 0 0 0 0" xml:space="preserve">
+							<circle fill="#7C7C7C" stroke="none" cx="6" cy="50" r="6">
+								<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite"
+									begin="0.1" />
+							</circle>
+							<circle fill="#7C7C7C" stroke="none" cx="26" cy="50" r="6">
+								<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite"
+									begin="0.2" />
+							</circle>
+							<circle fill="#7C7C7C" stroke="none" cx="46" cy="50" r="6">
+								<animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite"
+									begin="0.3" />
+							</circle>
+						</svg>
+					</div>
+					<p class="hero__description-text"></p>
+				</div>
+
+				<button type="button" class="hero__get-started-btn btn">get started</button>
+
+				<form class="hero__form" id="search-form">
+					<input type="text" class="hero__search" placeholder="Where do you want to call?" id="search-input"
+						maxlength="12">
+					<button class="hero__search-btn btn" type="submit"></button>
+
+					<span class="form-alert"></span>
+				</form>
+
+				<div class="hero__users users-hero">
+					<div class="users-hero__pics">
+						<div class="users-hero__pic add-pic"></div>
+						<img src="./img/user3.png" alt="" class="users-hero__pic">
+						<img src="./img/user2.png" alt="" class="users-hero__pic">
+						<img src="./img/user1.png" alt="" class="users-hero__pic">
+
+					</div>
+					<span class="users-hero__quantity">
+						45k+ Regular User. <a href="#">View Price Plan</a>
+					</span>
+				</div>
+
 			</div>
 
 		</main>
-
-		<div class="background-content">
-
-			<div class="background-content__spinner spinner">
-				<div class="spinner__main-circle">
-					<div class="spinner__middle-circle"></div>
-					<div class="spinner__item"></div>
-					<div class="spinner__item"></div>
-					<div class="spinner__item"></div>
-					<div class="spinner__item"></div>
-				</div>
-			</div>
-
-			<div class="background-content__image">
-				<img src="./img/hero-img.png" alt="Girl" class="background-content__image">
-			</div>
-		</div>
 
 	</div>
 
