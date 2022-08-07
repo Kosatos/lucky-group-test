@@ -103,19 +103,30 @@ body {
 			font-size: 24px;
 			row-gap: 25px;
 			position: absolute;
-			top: 108px;
+			top: 72px;
 			left: 0;
 			width: 100vw;
 			height: 100vh;
 			background-color: rgb(236, 247, 243, 0.9);
 			z-index: 50;
-			transition: all .3s ease;
 		}
 
 		&.active {
 			display: flex;
 			opacity: 1;
 			visibility: visible;
+			animation: dropdown .3s linear;
+		}
+	}
+
+	@keyframes dropdown {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+		};
+		100% {
+			transform: translateY(0);
+			opacity: 1;
 		}
 	}
 

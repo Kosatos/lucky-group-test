@@ -226,15 +226,12 @@ body {
     font-size: 24px;
     row-gap: 25px;
     position: absolute;
-    top: 108px;
+    top: 72px;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(236, 247, 243, 0.9);
     z-index: 50;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
   }
 }
 .nav-header__list.active {
@@ -243,6 +240,32 @@ body {
   display: flex;
   opacity: 1;
   visibility: visible;
+  -webkit-animation: dropdown 0.3s linear;
+          animation: dropdown 0.3s linear;
+}
+@-webkit-keyframes dropdown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes dropdown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 .nav-header__item {
   position: relative;
